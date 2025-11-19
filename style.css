@@ -517,4 +517,71 @@ body {
   .case-layout {
     grid-template-columns: minmax(0, 1fr);
   }
+
+/* --- Case Study section background --- */
+
+.section-case {
+  position: relative;
+  overflow: hidden;
+  color: #111827;
+  padding: 5rem 0;
+}
+
+/* 背景：BIM 图片 + 黄色遮罩，蓝色轻微参与 */
+.section-case::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(250, 204, 21, 0.95), rgba(250, 204, 21, 0.8)),
+    url("Casestudy.jpg") center center / cover no-repeat;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.case-inner {
+  position: relative;
+}
+
+/* 让标题变成浅色模式的样式 */
+.section-header-light h2,
+.section-header-light p {
+  color: #111827;
+}
+
+.section-header-light p {
+  color: #1f2937;
+}
+
+/* 文字卡片用半透明浅底，让背景透一点出来 */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .case-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.case-card {
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.45);
+}
+
+.case-card-light {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(250, 204, 21, 0.7);
+}
+
+.case-card-light h3 {
+  color: #111827;
+}
+
+.case-card-light p,
+.case-card-light li {
+  color: #1f2937;
 }
