@@ -1,0 +1,226 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f9fb;
+}
+
+a {
+  color: #2f4b7c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #003f5c;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-list li a {
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #ffa600;
+}
+
+/* Hero */
+.hero {
+  /* Use a local hero image for offline availability */
+  background: linear-gradient(rgba(0, 63, 92, 0.8), rgba(0, 63, 92, 0.8)), url('hero.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* Sections */
+section {
+  padding: 3rem 0;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #003f5c;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2f4b7c;
+}
+
+.services .columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.services .column {
+  flex: 1;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services ul {
+  list-style: disc inside;
+  margin-left: 1rem;
+}
+
+.values .cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.case-study ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.case-study li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #333;
+}
+
+.case-study li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2f4b7c;
+}
+
+.contact .contact-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact label {
+  font-weight: 600;
+  color: #2f4b7c;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact button {
+  padding: 0.8rem 1.2rem;
+  background-color: #2f4b7c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+.contact button:hover {
+  background-color: #365894;
+}
+
+footer {
+  background-color: #003f5c;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+}

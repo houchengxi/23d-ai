@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>23D | BIM Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">23D</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#values">Value Propositions</a></li>
+                    <li><a href="#case">Case Study</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content container">
+            <h2>We believe all builders should use 3‑D models to plan before building</h2>
+            <p>Transforming construction through digital collaboration.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Services Section -->
+        <section id="services" class="services container">
+            <h3>What You Provide Us</h3>
+            <div class="columns">
+                <div class="column">
+                    <h4>PDF Drawings</h4>
+                    <ul>
+                        <li>Architectural drawings</li>
+                        <li>Structural drawings</li>
+                        <li>Mechanical/Sprinkler drawings (optional)</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>What You Get From Us</h4>
+                    <ul>
+                        <li>3D model</li>
+                        <li>Clash Detection Report</li>
+                        <li>Generated Bill of Materials</li>
+                        <li>Delivered within a few days</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Propositions -->
+        <section id="values" class="values">
+            <div class="container">
+                <h3>Core Value Propositions</h3>
+                <div class="cards">
+                    <article class="card">
+                        <h4>Eliminate costly on‑site errors</h4>
+                        <p>Uncoordinated plans lead to clashes discovered during construction, causing expensive change orders and delays. Our automated clash detection identifies issues in a 3D model before construction begins, allowing problems to be solved on paper, not on site.</p>
+                    </article>
+                    <article class="card">
+                        <h4>Achieve budget certainty & reduce waste</h4>
+                        <p>Inaccurate take‑offs lead to budget overruns and material waste. Our 3D model generates a highly accurate, automated bill of materials, providing cost certainty and minimizing waste.</p>
+                    </article>
+                    <article class="card">
+                        <h4>Streamline construction & reduce delays</h4>
+                        <p>Ambiguous 2D plans and inefficient system routing cause confusion and slow down construction. We provide clear, unambiguous 3D visualizations and optimized routing that any trade can understand, streamlining on‑site activities.</p>
+                    </article>
+                    <article class="card">
+                        <h4>Access powerful technology at an unbeatable price</h4>
+                        <p>The benefits of BIM have been locked away in expensive, complex software, inaccessible to smaller builders. Our automation‑driven approach makes this powerful technology accessible to the mass market, and we are pioneering the use of AI to ultimately drive the cost of creating a digital twin to near zero.</p>
+                    </article>
+                    <article class="card">
+                        <h4>Maximize headroom & preserve structural integrity</h4>
+                        <p>Inefficient routing of sprinkler and HVAC lines leads to unsightly bulkheads that reduce ceiling height and unnecessary drilling through structural members. By modeling sprinkler and HVAC lines in 3D, we optimize routing to eliminate bulkheads and prevent unnecessary structural penetrations.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study Section -->
+        <section id="case" class="case-study">
+            <div class="container">
+                <h3>Case Study</h3>
+                <p>The following issues and coordination questions were identified in one of our projects:</p>
+                <ul>
+                    <li>North sliding door: The header shown on the drawings as a continuous piece was built as two separate headers on site. Please confirm the correct arrangement.</li>
+                    <li>Staircase connection: Please confirm whether the party wall along the staircase should extend continuously to the roof on the second floor.</li>
+                    <li>Beam under stairs: The beam located beneath the staircase conflicts with the stairs. Please confirm an optimized solution.</li>
+                    <li>First‑floor balcony area: Varying beam heights result in the wall having three different heights. Please confirm whether this arrangement is acceptable.</li>
+                    <li>First‑floor interior (north side): Beam height differences have caused exterior and interior walls to have different heights. Please confirm if the interior wall should match the height of the exterior wall.</li>
+                    <li>Roof structure: Some beams rest too high on other beams, causing conflicts with the flat roof or the staircase’s exterior wall. Adjustments are required.</li>
+                    <li>HVAC piping clash: Conflicts were detected in HVAC layouts in multiple levels of the building and require re‑optimization.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h3>Contact Us</h3>
+                <p>For a free consultation or to book a demo, please reach out to us.</p>
+                <p>Email: <a href="mailto:wl@tomospaces.com">wl@tomospaces.com</a></p>
+                <form class="contact-form" onsubmit="return false;">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required />
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required />
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Briefly describe your needs" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 23D BIM. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
