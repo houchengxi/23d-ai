@@ -116,7 +116,7 @@ body {
 }
 
 .nav a:hover {
-  color: #fbbf24;
+  color: #facc15; /* 明亮黄 */
 }
 
 .nav-cta {
@@ -137,10 +137,11 @@ body {
 .hero {
   padding: 5rem 0 4.5rem;
   background:
-    radial-gradient(circle at top, rgba(56, 189, 248, 0.22), transparent 55%),
-    radial-gradient(circle at bottom, rgba(250, 204, 21, 0.16), transparent 55%),
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.35), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(250, 204, 21, 0.35), transparent 55%),
     linear-gradient(to bottom, #020617, #020617);
 }
+
 
 .hero-inner {
   display: grid;
@@ -173,7 +174,7 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #a5b4fc;
+  color: #2563eb; /* 蓝色 */
   margin-bottom: 0.75rem;
 }
 
@@ -206,7 +207,7 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #fbbf24, #f97316);
+  background: linear-gradient(135deg, #2563eb, #facc15); /* 蓝到黄 */
   color: #111827;
   border-color: rgba(15, 23, 42, 0.6);
   box-shadow: 0 14px 40px rgba(15, 23, 42, 0.7);
@@ -479,5 +480,41 @@ body {
     flex-direction: column;
     gap: 0.4rem;
     text-align: center;
+  }
+
+.section-case {
+  position: relative;
+  overflow: hidden;
+}
+
+.case-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.case-image-wrap {
+  position: relative;
+}
+
+.case-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(250, 204, 21, 0.9); /* 黄边框呼应图片 */
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.9);
+}
+
+.case-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .case-layout {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
