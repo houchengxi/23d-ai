@@ -116,7 +116,7 @@ body {
 }
 
 .nav a:hover {
-  color: #facc15; /* 明亮黄 */
+  color: #1d4ed8; /* 蓝色点缀 */
 }
 
 .nav-cta {
@@ -137,8 +137,8 @@ body {
 .hero {
   padding: 5rem 0 4.5rem;
   background:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.35), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(250, 204, 21, 0.35), transparent 55%),
+    radial-gradient(circle at top left, rgba(250, 204, 21, 0.55), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.25), transparent 60%),
     linear-gradient(to bottom, #020617, #020617);
 }
 
@@ -174,7 +174,7 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #2563eb; /* 蓝色 */
+  color: #1d4ed8;  /* 蓝色小标题 */
   margin-bottom: 0.75rem;
 }
 
@@ -207,9 +207,9 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #2563eb, #facc15); /* 蓝到黄 */
+  background: linear-gradient(135deg, #facc15, #eab308); /* 亮黄→深黄 */
   color: #111827;
-  border-color: rgba(15, 23, 42, 0.6);
+  border-color: rgba(15, 23, 42, 0.4);
   box-shadow: 0 14px 40px rgba(15, 23, 42, 0.7);
 }
 
