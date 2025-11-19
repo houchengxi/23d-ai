@@ -1,131 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>23D | BIM Services</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-    </style>
+  <meta charset="UTF-8" />
+  <title>23D | BIM for Builders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">23D</h1>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#values">Value Propositions</a></li>
-                    <li><a href="#case">Case Study</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">23D</div>
+      <nav class="nav">
+        <a href="#how">How it works</a>
+        <a href="#values">Why 23D</a>
+        <a href="#case">Case study</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="nav-cta">Book a call</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
+  <main>
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-content container">
-            <h2>We believe all builders should use 3‑D models to plan before building</h2>
-            <p>Transforming construction through digital collaboration.</p>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">BIM for small & mid-size builders</p>
+          <h1>Plan in 3D before you build on site.</h1>
+          <p class="hero-sub">
+            We turn your PDF drawings into a coordinated 3D model with clash detection
+            and a generated bill of materials, so you can avoid costly surprises,
+            delays, and rework.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get a free 30-minute review</a>
+            <a href="#how" class="btn btn-ghost">See how it works</a>
+          </div>
+          <p class="hero-note">
+            Send us your architectural and structural PDFs — get results back in a few days.
+          </p>
         </div>
+        <div class="hero-panel">
+          <div class="hero-stat-card">
+            <p class="stat-label">Typical project</p>
+            <p class="stat-main">Custom house + laneway</p>
+            <p class="stat-sub">
+              3D framing, HVAC & sprinkler routing, clash detection, and material take-offs
+              delivered as a clear, visual package any trade can understand.
+            </p>
+          </div>
+          <div class="hero-tag">
+            <span>Clash report</span>
+            <span>Bill of materials</span>
+            <span>3D model</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <main>
-        <!-- Services Section -->
-        <section id="services" class="services container">
-            <h3>What You Provide Us</h3>
-            <div class="columns">
-                <div class="column">
-                    <h4>PDF Drawings</h4>
-                    <ul>
-                        <li>Architectural drawings</li>
-                        <li>Structural drawings</li>
-                        <li>Mechanical/Sprinkler drawings (optional)</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h4>What You Get From Us</h4>
-                    <ul>
-                        <li>3D model</li>
-                        <li>Clash Detection Report</li>
-                        <li>Generated Bill of Materials</li>
-                        <li>Delivered within a few days</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Value Propositions -->
-        <section id="values" class="values">
-            <div class="container">
-                <h3>Core Value Propositions</h3>
-                <div class="cards">
-                    <article class="card">
-                        <h4>Eliminate costly on‑site errors</h4>
-                        <p>Uncoordinated plans lead to clashes discovered during construction, causing expensive change orders and delays. Our automated clash detection identifies issues in a 3D model before construction begins, allowing problems to be solved on paper, not on site.</p>
-                    </article>
-                    <article class="card">
-                        <h4>Achieve budget certainty & reduce waste</h4>
-                        <p>Inaccurate take‑offs lead to budget overruns and material waste. Our 3D model generates a highly accurate, automated bill of materials, providing cost certainty and minimizing waste.</p>
-                    </article>
-                    <article class="card">
-                        <h4>Streamline construction & reduce delays</h4>
-                        <p>Ambiguous 2D plans and inefficient system routing cause confusion and slow down construction. We provide clear, unambiguous 3D visualizations and optimized routing that any trade can understand, streamlining on‑site activities.</p>
-                    </article>
-                    <article class="card">
-                        <h4>Access powerful technology at an unbeatable price</h4>
-                        <p>The benefits of BIM have been locked away in expensive, complex software, inaccessible to smaller builders. Our automation‑driven approach makes this powerful technology accessible to the mass market, and we are pioneering the use of AI to ultimately drive the cost of creating a digital twin to near zero.</p>
-                    </article>
-                    <article class="card">
-                        <h4>Maximize headroom & preserve structural integrity</h4>
-                        <p>Inefficient routing of sprinkler and HVAC lines leads to unsightly bulkheads that reduce ceiling height and unnecessary drilling through structural members. By modeling sprinkler and HVAC lines in 3D, we optimize routing to eliminate bulkheads and prevent unnecessary structural penetrations.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Case Study Section -->
-        <section id="case" class="case-study">
-            <div class="container">
-                <h3>Case Study</h3>
-                <p>The following issues and coordination questions were identified in one of our projects:</p>
-                <ul>
-                    <li>North sliding door: The header shown on the drawings as a continuous piece was built as two separate headers on site. Please confirm the correct arrangement.</li>
-                    <li>Staircase connection: Please confirm whether the party wall along the staircase should extend continuously to the roof on the second floor.</li>
-                    <li>Beam under stairs: The beam located beneath the staircase conflicts with the stairs. Please confirm an optimized solution.</li>
-                    <li>First‑floor balcony area: Varying beam heights result in the wall having three different heights. Please confirm whether this arrangement is acceptable.</li>
-                    <li>First‑floor interior (north side): Beam height differences have caused exterior and interior walls to have different heights. Please confirm if the interior wall should match the height of the exterior wall.</li>
-                    <li>Roof structure: Some beams rest too high on other beams, causing conflicts with the flat roof or the staircase’s exterior wall. Adjustments are required.</li>
-                    <li>HVAC piping clash: Conflicts were detected in HVAC layouts in multiple levels of the building and require re‑optimization.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h3>Contact Us</h3>
-                <p>For a free consultation or to book a demo, please reach out to us.</p>
-                <p>Email: <a href="mailto:wl@tomospaces.com">wl@tomospaces.com</a></p>
-                <form class="contact-form" onsubmit="return false;">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required />
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your email" required />
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Briefly describe your needs" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 23D BIM. All rights reserved.</p>
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>How 23D works</h2>
+          <p>Simple workflow designed for busy builders and project managers.</p>
         </div>
-    </footer>
+        <div class="grid grid-3">
+          <div class="card step-card">
+            <div class="step-number">01</div>
+            <h3>Send us your drawings</h3>
+            <p>
+              Email us PDF drawings of your architectural and structural sets.
+              Mechanical and sprinkler drawings are optional but recommended for
+              full coordination.
+            </p>
+            <ul>
+              <li>Architectural PDFs</li>
+              <li>Structural PDFs</li>
+              <li>Optional: mechanical / sprinkler</li>
+            </ul>
+          </div>
+          <div class="card step-card">
+            <div class="step-number">02</div>
+            <h3>We build the 3D model</h3>
+            <p>
+              We create a coordinated 3D model of framing, structure and key
+              building systems. Our automation accelerates modeling while still
+              allowing manual checks where it matters.
+            </p>
+            <p class="muted">
+              Think of it as a “digital dry-run” of your build, before a single
+              stick is cut on site.
+            </p>
+          </div>
+          <div class="card step-card">
+            <div class="step-number">03</div>
+            <h3>You get clear deliverables</h3>
+            <p>Within a few days, you receive:</p>
+            <ul>
+              <li>3D model exports for review</li>
+              <li>Clash detection report with screenshots and notes</li>
+              <li>Generated bill of materials for framing and key elements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE PROPS -->
+    <section id="values" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why builders use 23D</h2>
+          <p>We focus on problems that actually cost you money on site.</p>
+        </div>
+        <div class="grid grid-2">
+          <div class="card value-card">
+            <h3>1. Eliminate costly on-site errors</h3>
+            <p class="muted">
+              Uncoordinated plans from different consultants create clashes that
+              only show up once you’re framing. That leads to emergency RFIs,
+              change orders and delays.
+            </p>
+            <p>
+              Our clash detection finds these conflicts in the 3D model before
+              construction, so issues are solved on paper, not on site.
+            </p>
+          </div>
+          <div class="card value-card">
+            <h3>2. Achieve budget certainty & reduce waste</h3>
+            <p class="muted">
+              Inaccurate material take-offs drive budget overruns and piles of
+              unused lumber on site.
+            </p>
+            <p>
+              Our 3D model generates an automated bill of materials, giving you a
+              solid baseline for ordering and reducing waste.
+            </p>
+          </div>
+          <div class="card value-card">
+            <h3>3. Streamline construction & reduce delays</h3>
+            <p class="muted">
+              Ambiguous 2D plans slow down trades and create arguments in the field.
+            </p>
+            <p>
+              Clear, unambiguous 3D views and optimized routing make it obvious
+              what needs to happen, so crews can keep moving.
+            </p>
+          </div>
+          <div class="card value-card">
+            <h3>4. Access powerful tech at an unbeatable price</h3>
+            <p class="muted">
+              Traditional BIM software is expensive and requires specialist staff,
+              which is out of reach for many smaller builders.
+            </p>
+            <p>
+              Our automation-driven workflow and AI-assisted tools make “digital
+              twin” style planning accessible to regular residential builders.
+            </p>
+          </div>
+          <div class="card value-card">
+            <h3>5. Maximize headroom & protect structure</h3>
+            <p class="muted">
+              Poorly coordinated HVAC and sprinkler lines lead to ugly bulkheads
+              and unnecessary holes in structural members.
+            </p>
+            <p>
+              By modeling these systems in 3D, we plan routing that eliminates
+              bulkheads where possible and avoids risky structural penetrations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDY -->
+    <section id="case" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Case study: main house + laneway</h2>
+          <p>A real project where 3D coordination caught issues that 2D plans missed.</p>
+        </div>
+        <div class="grid grid-2 case-grid">
+          <div class="card case-card">
+            <h3>What we found</h3>
+            <ul>
+              <li>Conflicting headers above a large north sliding door and window.</li>
+              <li>Stair beams intersecting with stair runs between first and second floors.</li>
+              <li>Exterior walls without proper supporting beams under roof decks.</li>
+              <li>Beam height differences causing inconsistent wall heights in balcony and interior areas.</li>
+              <li>Roof beams conflicting with flat roof and stair enclosure geometry.</li>
+            </ul>
+          </div>
+          <div class="card case-card">
+            <h3>Why it matters</h3>
+            <p>
+              These are the kinds of issues that usually show up only when
+              you’re mid-framing, with trades on site and schedules already tight.
+            </p>
+            <p>
+              By surfacing them early in a 3D model, the builder was able to
+              coordinate fixes with the designer and engineer in advance, avoiding:
+            </p>
+            <ul>
+              <li>On-site redesigns</li>
+              <li>Last-minute RFIs and change orders</li>
+              <li>Delays cascading into following trades</li>
+            </ul>
+            <p class="muted">
+              The result: smoother framing, fewer surprises, and a cleaner final build.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING / WHO IT'S FOR -->
+    <section id="pricing" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Is 23D a fit for your projects?</h2>
+          <p>Designed for small and mid-size residential builders and developers.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card profile-card">
+            <h3>Custom home builders</h3>
+            <p>
+              Single family homes, spec builds, and laneway houses where every
+              change order and delay hits your own bottom line.
+            </p>
+          </div>
+          <div class="card profile-card">
+            <h3>Multiplex & infill developers</h3>
+            <p>
+              Urban infill, multiplex, and small multi-unit sites where tight
+              footprints make coordination and headroom critical.
+            </p>
+          </div>
+          <div class="card profile-card">
+            <h3>Construction managers</h3>
+            <p>
+              Owners’ reps and CMs who want a clear, visual coordination tool
+              to align designers, trades, and clients before construction.
+            </p>
+          </div>
+        </div>
+        <div class="pricing-note">
+          <p>
+            Pricing depends on project size and scope, but our goal is simple:
+            deliver the benefits of BIM without “enterprise BIM pricing”.
+          </p>
+          <p class="muted">
+            Share a recent set of drawings and we’ll give you a tailored quote
+            after a free 30-minute review call.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Book a free 30-minute review</h2>
+          <p>
+            Send us your latest PDF drawings and we’ll walk through where 3D
+            coordination can de-risk your project.
+          </p>
+          <p class="contact-email">
+            Email us at <a href="mailto:wl@tomospaces.com">wl@tomospaces.com</a>
+          </p>
+          <p class="muted">
+            In your email, include project type (custom home, laneway, multiplex),
+            approximate square footage, and your ideal timeline.
+          </p>
+        </div>
+        <div class="card contact-card">
+          <form>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Project type
+              <input type="text" name="projectType" placeholder="Custom home, laneway, multiplex..." />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell us briefly about your project."></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-full" disabled>
+              Submit (email us directly for now)
+            </button>
+            <p class="form-note">
+              This form is a visual placeholder. For now, please email us directly so we can respond faster.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 23D · BIM for builders</span>
+      <span>Helping you build it right the first time.</span>
+    </div>
+  </footer>
 </body>
 </html>
