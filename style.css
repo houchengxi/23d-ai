@@ -1,3 +1,4 @@
+/* Global styles */
 *,
 *::before,
 *::after {
@@ -10,9 +11,11 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #0f172a;
-  background: #0b1120;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.6;
+  color: #111827;
+  background: #fffbeb; /* 整体偏浅黄 */
 }
 
 /* Layout helpers */
@@ -26,14 +29,12 @@ body {
 
 .section {
   padding: 5rem 0;
+  background: #fffbeb; /* 默认浅黄 */
 }
 
 .section-alt {
-  background: #0b1120;
-}
-
-.section:not(.section-alt) {
-  background: #020617;
+  padding: 5rem 0;
+  background: #fef3c7; /* 略深一点的黄，做分区 */
 }
 
 .section-header {
@@ -44,11 +45,11 @@ body {
 .section-header h2 {
   font-size: 2.2rem;
   margin-bottom: 0.75rem;
-  color: #e5e7eb;
+  color: #1f2937;
 }
 
 .section-header p {
-  color: #9ca3af;
+  color: #4b5563;
   max-width: 34rem;
   margin: 0 auto;
   font-size: 0.98rem;
@@ -82,9 +83,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(15, 23, 42, 0.9);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+  background: rgba(254, 243, 199, 0.9); /* 浅黄半透明 */
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(252, 211, 77, 0.6);
 }
 
 .nav-container {
@@ -99,7 +100,7 @@ body {
   letter-spacing: 0.08em;
   font-size: 1.1rem;
   text-transform: uppercase;
-  color: #e5e7eb;
+  color: #1f2937;
 }
 
 .nav {
@@ -110,7 +111,7 @@ body {
 
 .nav a {
   font-size: 0.95rem;
-  color: #cbd5f5;
+  color: #1f2937;
   text-decoration: none;
   padding: 0.25rem 0;
 }
@@ -122,8 +123,8 @@ body {
 .nav-cta {
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(248, 250, 252, 0.25);
-  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(251, 191, 36, 0.7);
+  background: #fef9c3;
 }
 
 @media (max-width: 720px) {
@@ -137,11 +138,10 @@ body {
 .hero {
   padding: 5rem 0 4.5rem;
   background:
-    radial-gradient(circle at top left, rgba(250, 204, 21, 0.55), transparent 60%),
+    radial-gradient(circle at top left, rgba(250, 204, 21, 0.7), transparent 60%),
     radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.25), transparent 60%),
-    linear-gradient(to bottom, #020617, #020617);
+    linear-gradient(to bottom, #fef9c3, #fffbeb);
 }
-
 
 .hero-inner {
   display: grid;
@@ -160,11 +160,11 @@ body {
   font-size: clamp(2.4rem, 4vw, 3.2rem);
   line-height: 1.1;
   margin-bottom: 1rem;
-  color: #f9fafb;
+  color: #111827;
 }
 
 .hero-sub {
-  color: #cbd5f5;
+  color: #374151;
   max-width: 34rem;
   font-size: 1rem;
   margin-bottom: 1.75rem;
@@ -174,7 +174,7 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #1d4ed8;  /* 蓝色小标题 */
+  color: #1d4ed8; /* 蓝色小标题 */
   margin-bottom: 0.75rem;
 }
 
@@ -187,7 +187,7 @@ body {
 
 .hero-note {
   font-size: 0.85rem;
-  color: #9ca3af;
+  color: #4b5563;
 }
 
 /* Buttons */
@@ -207,10 +207,10 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #facc15, #eab308); /* 亮黄→深黄 */
+  background: linear-gradient(135deg, #facc15, #eab308); /* 亮黄为主 */
   color: #111827;
-  border-color: rgba(15, 23, 42, 0.4);
-  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.7);
+  border-color: rgba(202, 138, 4, 0.8);
+  box-shadow: 0 12px 30px rgba(202, 138, 4, 0.45);
 }
 
 .btn-primary:hover {
@@ -219,13 +219,13 @@ body {
 
 .btn-ghost {
   background: transparent;
-  border-color: rgba(148, 163, 184, 0.5);
-  color: #e5e7eb;
+  border-color: rgba(37, 99, 235, 0.4);
+  color: #1d4ed8;
 }
 
 .btn-ghost:hover {
-  border-color: #fbbf24;
-  color: #fbbf24;
+  border-color: #1d4ed8;
+  background: rgba(219, 234, 254, 0.6);
 }
 
 .btn-full {
@@ -241,30 +241,29 @@ body {
 }
 
 .hero-stat-card {
-  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 60%),
-              rgba(15, 23, 42, 0.92);
+  background: #fefce8;
   border-radius: 1.25rem;
   padding: 1.5rem 1.6rem;
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(250, 204, 21, 0.9);
+  box-shadow: 0 12px 32px rgba(248, 185, 24, 0.45);
 }
 
 .stat-label {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: #a5b4fc;
+  color: #1d4ed8;
   margin-bottom: 0.5rem;
 }
 
 .stat-main {
   font-weight: 600;
-  color: #f9fafb;
+  color: #111827;
   margin-bottom: 0.5rem;
 }
 
 .stat-sub {
-  color: #cbd5f5;
+  color: #374151;
   font-size: 0.9rem;
 }
 
@@ -278,38 +277,38 @@ body {
   font-size: 0.78rem;
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  color: #e5e7eb;
-  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(251, 191, 36, 0.9);
+  color: #92400e;
+  background: #fef3c7;
 }
 
 /* Cards */
 
 .card {
-  background: rgba(15, 23, 42, 0.9);
+  background: #ffffff;
   border-radius: 1.1rem;
   padding: 1.5rem 1.6rem;
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(251, 191, 36, 0.8);
+  box-shadow: 0 10px 28px rgba(202, 138, 4, 0.25);
 }
 
 .card h3 {
   margin-top: 0;
   margin-bottom: 0.75rem;
   font-size: 1.15rem;
-  color: #e5e7eb;
+  color: #111827;
 }
 
 .card p {
   margin: 0 0 0.6rem;
-  color: #cbd5f5;
+  color: #374151;
   font-size: 0.96rem;
 }
 
 .card ul {
   margin: 0.4rem 0 0;
   padding-left: 1.2rem;
-  color: #cbd5f5;
+  color: #374151;
   font-size: 0.95rem;
 }
 
@@ -331,7 +330,7 @@ body {
   font-size: 0.8rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #6b7280;
+  color: #9ca3af;
 }
 
 /* Value props */
@@ -367,7 +366,7 @@ body {
 }
 
 .pricing-note p {
-  color: #cbd5f5;
+  color: #374151;
 }
 
 .pricing-note .muted {
@@ -377,8 +376,7 @@ body {
 /* Contact */
 
 .contact-section {
-  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.16), transparent 60%),
-              #020617;
+  background: #fef3c7; /* 联系区块稍微深一点黄 */
 }
 
 .contact-grid {
@@ -396,15 +394,15 @@ body {
 
 .contact-section h2 {
   font-size: 2rem;
-  color: #f9fafb;
+  color: #111827;
 }
 
 .contact-section p {
-  color: #cbd5f5;
+  color: #374151;
 }
 
 .contact-email a {
-  color: #fbbf24;
+  color: #1d4ed8;
   text-decoration: none;
 }
 
@@ -422,24 +420,24 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 0.86rem;
-  color: #9ca3af;
+  color: #4b5563;
   gap: 0.25rem;
 }
 
 .contact-card input,
 .contact-card textarea {
   border-radius: 0.75rem;
-  border: 1px solid rgba(148, 163, 184, 0.8);
-  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(209, 213, 219, 1);
+  background: #ffffff;
   padding: 0.55rem 0.7rem;
-  color: #e5e7eb;
+  color: #111827;
   font-size: 0.92rem;
   outline: none;
 }
 
 .contact-card input:focus,
 .contact-card textarea:focus {
-  border-color: #fbbf24;
+  border-color: #facc15;
 }
 
 .contact-card textarea {
@@ -449,21 +447,21 @@ body {
 .form-note {
   margin-top: 0.4rem;
   font-size: 0.8rem;
-  color: #9ca3af;
+  color: #6b7280;
 }
 
 /* Text helpers */
 
 .muted {
-  color: #9ca3af;
+  color: #6b7280;
   font-size: 0.9rem;
 }
 
 /* Footer */
 
 .site-footer {
-  border-top: 1px solid rgba(148, 163, 184, 0.2);
-  background: #020617;
+  border-top: 1px solid rgba(252, 211, 77, 0.8);
+  background: #fef3c7;
 }
 
 .footer-inner {
@@ -471,7 +469,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #6b7280;
+  color: #92400e;
   font-size: 0.8rem;
 }
 
@@ -481,107 +479,4 @@ body {
     gap: 0.4rem;
     text-align: center;
   }
-
-.section-case {
-  position: relative;
-  overflow: hidden;
-}
-
-.case-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 2rem;
-  align-items: center;
-}
-
-.case-image-wrap {
-  position: relative;
-}
-
-.case-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 1.25rem;
-  border: 1px solid rgba(250, 204, 21, 0.9); /* 黄边框呼应图片 */
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.9);
-}
-
-.case-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-@media (max-width: 900px) {
-  .case-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-/* --- Case Study section background --- */
-
-.section-case {
-  position: relative;
-  overflow: hidden;
-  color: #111827;
-  padding: 5rem 0;
-}
-
-/* 背景：BIM 图片 + 黄色遮罩，蓝色轻微参与 */
-.section-case::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(to right, rgba(250, 204, 21, 0.95), rgba(250, 204, 21, 0.8)),
-    url("Casestudy.jpg") center center / cover no-repeat;
-  mix-blend-mode: normal;
-  opacity: 0.9;
-  pointer-events: none;
-}
-
-.case-inner {
-  position: relative;
-}
-
-/* 让标题变成浅色模式的样式 */
-.section-header-light h2,
-.section-header-light p {
-  color: #111827;
-}
-
-.section-header-light p {
-  color: #1f2937;
-}
-
-/* 文字卡片用半透明浅底，让背景透一点出来 */
-.case-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.75rem;
-  margin-top: 2rem;
-}
-
-@media (max-width: 900px) {
-  .case-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-.case-card {
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.45);
-}
-
-.case-card-light {
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(250, 204, 21, 0.7);
-}
-
-.case-card-light h3 {
-  color: #111827;
-}
-
-.case-card-light p,
-.case-card-light li {
-  color: #1f2937;
 }
