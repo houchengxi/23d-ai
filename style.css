@@ -480,3 +480,43 @@ body {
     text-align: center;
   }
 }
+/* ---- Case study background using BIM image ---- */
+
+.section-case {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0;
+  background: transparent; /* 背景交给 ::before 控制 */
+}
+
+/* 用图片 + 黄色渐变做整块背景 */
+.section-case::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(254, 243, 199, 0.96), rgba(250, 204, 21, 0.9)),
+    url("case-bim.jpg") center center / cover no-repeat;
+  opacity: 0.9;
+  mix-blend-mode: multiply; /* 让图和黄调融合在一起 */
+  pointer-events: none;
+}
+
+.case-inner {
+  position: relative;
+  z-index: 1; /* 文字浮在背景上面 */
+}
+
+/* 在图片背景上用深一点的文字颜色，保证可读性 */
+.section-header-on-image h2 {
+  color: #111827;
+}
+
+.section-header-on-image p {
+  color: #374151;
+}
+
+/* 调整 case-grid 在这块的显示（保持和其他 section 一致） */
+.case-grid {
+  align-items: flex-start;
+}
