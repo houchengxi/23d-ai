@@ -178,6 +178,13 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.hero-tagline {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #1d4ed8; /* blue accent */
+  margin-bottom: 0.75rem;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
